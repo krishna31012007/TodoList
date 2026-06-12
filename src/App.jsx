@@ -148,7 +148,7 @@ const handledeleteall =()=>{ /* this will delete the all todos in localstorage *
               
               <div className='flex justify-between w-full items-center'>
 
-                <div className={item.isCompleted? "line-through":""}>{item.todo}</div>
+                <div className={`w-[80vw] overflow-hidden ${item.isCompleted? "line-through":""}`}>{item.todo}</div>
                 <div className='buttons flex'>
                   <img onClick={(e)=>handleEdit(e,item.id)} src={edit} alt="" className='bg-purple-950 p-1 mx-2 hover:bg-purple-700'/>
                   <img onClick={(e)=>handleDelete(e,item.id)} src={deleteIcon} alt="delete" className='bg-purple-950 p-1 hover:bg-purple-700'/>
